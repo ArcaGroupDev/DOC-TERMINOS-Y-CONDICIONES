@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Términos y condiciones del programa CHOHO EXPERT | CHOHO</title>
+  <meta name="description" content="Términos y condiciones del programa de incentivos para vendedores de mostrador CHOHO EXPERT.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* =====================================================
+       MISMA PALETA DE LOS FORMULARIOS
+    ===================================================== */
+
+    :root {
+      --rojo: #E31E24;
+      --rojo-osc: #B5161B;
+      --negro: #111111;
+      --texto: #1A1A1A;
+      --gris: #6B6B6B;
+      --borde: #D6D6D6;
+      --suave: #F7F7F7;
+      --linea: #EFEFEF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Montserrat', Arial, sans-serif;
+      color: var(--texto);
+      background: linear-gradient(
+        135deg,
+        #2A1414 0%,
+        #2A1414 38%,
+        var(--negro) 38%,
+        var(--negro) 100%
+      );
+      padding: 48px 16px;
+    }
+
+    a {
+      color: var(--rojo-osc);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--rojo);
+      outline-offset: 3px;
+    }
+
+    /* =====================================================
+       TARJETA PRINCIPAL
+    ===================================================== */
+
+    .card {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    }
+
+    .card-header {
+      padding: 36px 24px 30px;
+      text-align: center;
+      border-bottom: 6px solid var(--rojo);
+    }
+
+    .card-header img {
+      max-width: 360px;
+      width: 80%;
+      height: auto;
+    }
+
+    .card-body {
+      padding: 40px 42px 44px;
+    }
+
+    /* =====================================================
+       TÍTULO DEL DOCUMENTO
+    ===================================================== */
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      line-height: 1.18;
+    }
+
+    h1 span {
+      color: var(--rojo);
+    }
+
+    h1 + .session {
+      margin-top: 22px;
+    }
+
+    .subtitulo {
+      margin: 10px 0 22px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gris);
+      text-transform: uppercase;
+    }
+
+    .session {
+      background: var(--suave);
+      border-left: 6px solid var(--rojo);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 0 0 28px;
+    }
+
+    .session .emp {
+      font-weight: 800;
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+
+    .session .nit {
+      font-size: 14px;
+      color: var(--gris);
+      margin-top: 2px;
+    }
+
+    .ficha {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 26px;
+      margin: 0 0 28px;
+      padding: 14px 18px;
+      list-style: none;
+      background: var(--suave);
+      border-radius: 10px;
+      font-size: 14px;
+      color: var(--gris);
+    }
+
+    .ficha strong {
+      color: var(--texto);
+    }
+
+    .section-title {
+      margin: 44px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--linea);
+      font-size: 20px;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    .section-title span {
+      color: var(--rojo);
+    }
+
+    /* =====================================================
+       ÍNDICE DESPLEGABLE
+    ===================================================== */
+
+    .indice-caja {
+      margin: 0 0 28px;
+      background: var(--suave);
+      border-left: 6px solid var(--rojo);
+      border-radius: 10px;
+    }
+
+    .indice-caja summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      font-weight: 800;
+      font-size: 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .indice-caja summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .indice-caja summary::after {
+      content: "+";
+      font-size: 24px;
+      line-height: 1;
+      color: var(--rojo);
+    }
+
+    .indice-caja[open] summary::after {
+      content: "–";
+    }
+
+    .indice {
+      margin: 0;
+      padding: 0 20px 18px;
+      list-style: none;
+      columns: 2;
+      column-gap: 28px;
+    }
+
+    .indice li {
+      break-inside: avoid;
+    }
+
+    .indice a {
+      display: grid;
+      grid-template-columns: 2.4em 1fr;
+      padding: 6px 0;
+      color: var(--texto);
+      font-size: 14px;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+
+    .indice li.anexo a {
+      grid-template-columns: 4.6em 1fr;
+    }
+
+    .indice a:hover {
+      color: var(--rojo-osc);
+    }
+
+    .indice .num {
+      font-weight: 800;
+      color: var(--rojo);
+    }
+
+    /* =====================================================
+       TEXTO DEL DOCUMENTO
+    ===================================================== */
+
+    .texto {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--texto);
+    }
+
+    .texto p {
+      margin: 0 0 1.1em;
+    }
+
+    .texto .doc-intro {
+      padding: 16px 20px;
+      background: var(--suave);
+      border-left: 6px solid var(--negro);
+      border-radius: 10px;
+      font-weight: 600;
+      color: var(--gris);
+    }
+
+    .texto h2 {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      align-items: baseline;
+      margin: 2.2em 0 .9em;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--linea);
+      font-size: 18px;
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      line-height: 1.35;
+    }
+
+    .texto h2 .num {
+      color: var(--rojo);
+    }
+
+    .texto strong {
+      font-weight: 800;
+      color: var(--negro);
+    }
+
+    .finalidades {
+      margin: 0 0 1.4em;
+      padding: 0;
+      list-style: none;
+    }
+
+    .finalidades li {
+      position: relative;
+      padding: 12px 0 12px 30px;
+      border-bottom: 1px solid var(--linea);
+    }
+
+    .finalidades li:first-child {
+      border-top: 1px solid var(--linea);
+    }
+
+    .finalidades li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 1.3em;
+      width: 9px;
+      height: 9px;
+      background: var(--rojo);
+      transform: rotate(45deg);
+    }
+
+    /* Anexo 3: mensaje de bienvenida (estilo del aviso verde del formulario) */
+
+    .mensaje-bienvenida {
+      margin: 0 0 1em;
+      padding: 24px 24px 8px;
+      background: #EAF7EE;
+      border: 1px solid #BFE5CB;
+      border-radius: 10px;
+    }
+
+    .mensaje-bienvenida p:last-child {
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      color: #1E7B3A;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    /* =====================================================
+       CONTACTO
+    ===================================================== */
+
+    .contacto {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .contacto p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--gris);
+    }
+
+    .acciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 52px;
+      padding: 0 22px;
+      border: 0;
+      border-radius: 10px;
+      background: var(--rojo);
+      color: #fff;
+      font: 800 15px 'Montserrat', Arial, sans-serif;
+      font-style: italic;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .2s;
+    }
+
+    .btn:hover {
+      background: var(--rojo-osc);
+    }
+
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 52px;
+      padding: 0 20px;
+      background: none;
+      border: 2px solid var(--negro);
+      color: var(--negro);
+      border-radius: 10px;
+      font: 700 13px 'Montserrat', Arial, sans-serif;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .link-btn:hover {
+      background: var(--negro);
+      color: #fff;
+    }
+
+    .pie {
+      background: var(--negro);
+      color: #fff;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 800;
+      font-style: italic;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 12px;
+    }
+
+    .empresa {
+      max-width: 900px;
+      margin: 18px auto 0;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.8;
+      color: rgba(255,255,255,.65);
+    }
+
+    /* =====================================================
+       CELULAR
+    ===================================================== */
+
+    @media (max-width: 720px) {
+
+      body {
+        padding: 20px 12px;
+      }
+
+      .card-body {
+        padding: 28px 20px 32px;
+      }
+
+      h1 {
+        font-size: 23px;
+      }
+
+      .indice {
+        columns: 1;
+      }
+
+      .contacto {
+        grid-template-columns: 1fr;
+      }
+
+      .contacto .acciones > * {
+        flex: 1 1 100%;
+      }
+
+    }
+
+    /* =====================================================
+       IMPRESIÓN
+    ===================================================== */
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .card { box-shadow: none; border-radius: 0; }
+      .indice-caja, .volver, .contacto-bloque, .empresa { display: none !important; }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <!-- ================= LOGO ================= -->
+
+    <div class="card-header">
+      <img src="data:image/png;base64,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" alt="CHOHO, mejor que el original">
+    </div>
+
+
+    <div class="card-body">
+
+      <!-- ================= TÍTULO ================= -->
+
+      <h1 id="inicio">TÉRMINOS Y <span>CONDICIONES</span></h1>
+
+
+      <div class="session">
+        <div class="emp">CHOHO EXPERT</div>
+        <div class="nit">Programa de incentivos para vendedores de mostrador</div>
+      </div>
+
+      <ul class="ficha">
+        <li><strong>Versión:</strong> 1.0</li>
+        <li><strong>Publicación y entrada en vigencia:</strong> 2 de septiembre de 2026</li>
+        <li><strong>Publicados de manera permanente en:</strong> Chatbot</li>
+      </ul>
+
+      <details class="indice-caja">
+        <summary>Contenido</summary>
+        <ol class="indice">
+          <li class=""><a href="#seccion-1"><span class="num">1.</span> Identificación del organizador y aceptación</a></li>
+          <li class=""><a href="#seccion-2"><span class="num">2.</span> Definiciones</a></li>
+          <li class=""><a href="#seccion-3"><span class="num">3.</span> Naturaleza de la actividad</a></li>
+          <li class=""><a href="#seccion-4"><span class="num">4.</span> Participantes y requisitos de elegibilidad</a></li>
+          <li class=""><a href="#seccion-5"><span class="num">5.</span> Vigencia</a></li>
+          <li class=""><a href="#seccion-6"><span class="num">6.</span> Mecánica del incentivo</a></li>
+          <li class=""><a href="#seccion-7"><span class="num">7.</span> Pago del incentivo</a></li>
+          <li class=""><a href="#seccion-8"><span class="num">8.</span> Causales de exclusión</a></li>
+          <li class=""><a href="#seccion-9"><span class="num">9.</span> Naturaleza de la relación con el participante</a></li>
+          <li class=""><a href="#seccion-10"><span class="num">10.</span> Tratamiento de datos personales</a></li>
+          <li class=""><a href="#seccion-11"><span class="num">11.</span> Modificación, suspensión y terminación del programa</a></li>
+          <li class=""><a href="#seccion-12"><span class="num">12.</span> Preguntas, quejas y reclamos</a></li>
+          <li class=""><a href="#seccion-13"><span class="num">13.</span> Disposiciones finales</a></li>
+          <li class="anexo"><a href="#anexo-1"><span class="num">Anexo 1</span> Canal Cuentas Claves</a></li>
+          <li class="anexo"><a href="#anexo-2"><span class="num">Anexo 2</span> Canal Tiendas Especializadas</a></li>
+          <li class="anexo"><a href="#anexo-3"><span class="num">Anexo 3</span> Comunicación de bienvenida y constancia de inscripción</a></li>
+        </ol>
+      </details>
+
+      <!-- ================= DOCUMENTO ================= -->
+
+      <div class="texto">
+<h2 id="seccion-1"><span class="num">1.</span> Identificación del organizador y aceptación</h2>
+<p><strong>1.1. Organizador.</strong> El programa de incentivos CHOHO EXPERT, en adelante el Programa, es organizado y administrado por CHOHO COLOMBIA S.A.S., en adelante CHOHO, sociedad identificada con el número de identificación tributaria 830.143.066-0, con domicilio principal en Autopista Norte No. 122 - 35, Edificio Mezco, Piso 7, Bogotá, que atiende a los participantes a través de la línea de WhatsApp +57 314 294 8318 y del correo electrónico contacto@chohocolombia.com.</p>
+<p><strong>1.2. Aceptación.</strong> Al inscribirse en el Programa el vendedor de mostrador declara que leyó, entendió y acepta estos términos y condiciones en su totalidad, en la versión publicada en la dirección indicada en el encabezado a la fecha de su inscripción. Quien no los acepte debe abstenerse de inscribirse. La aceptación de estos términos y condiciones no sustituye ni reemplaza la autorización para el tratamiento de datos personales, que se otorga por separado en los términos del numeral 10.</p>
+<p><strong>1.3. Documentos relacionados.</strong> Hacen parte integral del Programa el formulario de inscripción, la autorización para el tratamiento de datos personales que allí se otorga, la comunicación de bienvenida y constancia de inscripción que se transcribe en el Anexo 3, la política de tratamiento de datos personales de CHOHO disponible en Chatbot y Comunidad y el anexo del canal al que pertenezca cada participante.</p>
+<h2 id="seccion-2"><span class="num">2.</span> Definiciones</h2>
+<p>Para efectos de estos términos y condiciones se entiende por: i) Vendedor de mostrador o Participante, la persona natural mayor de dieciocho años que atiende el mostrador de un Cliente Vinculado y que se encuentra inscrita en el Programa; ii) Cliente Vinculado, el distribuidor, mayorista o tienda especializada que ha sido incorporado al Programa por CHOHO conforme al numeral 4.1 y cuya vinculación se comunica al participante al momento de la inscripción; iii) Producto Participante, el Kit de Arrastre CHOHO en las referencias que se relacionan en el anexo de cada canal; iv) Punto, la unidad con la que se mide el incentivo, equivalente a un peso colombiano; v) Venta Válida, la venta de un Producto Participante realizada y registrada dentro de la vigencia y validada por CHOHO conforme al numeral 6.2; y, vi) Corte, la fecha mensual en la que CHOHO consolida las Ventas Válidas registradas y líquida los Puntos causados.</p>
+<h2 id="seccion-3"><span class="num">3.</span> Naturaleza de la actividad</h2>
+<p>El Programa es una actividad promocional de la marca CHOHO que reconoce un incentivo económico a todo vendedor de mostrador inscrito que cumpla la condición objetiva descrita en el numeral 6. No es un sorteo, una rifa ni un juego de suerte y azar, y tampoco es un concurso con número limitado de ganadores: el incentivo no se disputa entre participantes ni depende de un resultado aleatorio, sino que se causa de manera automática por cada Venta Válida. Todo participante que registre Ventas Válidas recibe el incentivo que le corresponda, sin cupo ni competencia con los demás.</p>
+<h2 id="seccion-4"><span class="num">4.</span> Participantes y requisitos de elegibilidad</h2>
+<p><strong>4.1. Quiénes pueden participar.</strong> Pueden participar los vendedores de mostrador que cumplan de manera concurrente las siguientes condiciones: i) ser personas naturales mayores de dieciocho años; ii) desempeñarse como vendedores de mostrador de un Cliente Vinculado del canal respectivo; iii) estar inscritos en el Programa conforme al numeral 4.3; y, iv) haber otorgado la autorización para el tratamiento de sus datos personales en los términos del numeral 10. CHOHO publica y mantiene actualizado el listado de Clientes Vinculados de cada canal en Chatbot, y el vendedor puede consultarlo en cualquier momento por la línea de WhatsApp del Programa.</p>
+<p><strong>4.2. Exclusiones.</strong> No pueden participar: i) los trabajadores de CHOHO, ni sus cónyuges, compañeros permanentes y parientes hasta el segundo grado de consanguinidad, segundo de afinidad y único civil; ii) los trabajadores de las agencias y proveedores que intervengan en la operación del Programa; y, iii) quienes hayan sido excluidos del Programa por alguna de las causales del numeral 8.</p>
+<p><strong>4.3. Inscripción.</strong> La inscripción se realiza en el formulario electrónico habilitado por CHOHO, en el que el vendedor de mostrador registra sus datos, declara ser mayor de edad, acepta estos términos y condiciones y otorga por separado su autorización para el tratamiento de datos personales. La inscripción es personal e intransferible. Dentro de los tres días hábiles siguientes CHOHO le envía la comunicación de bienvenida y constancia de inscripción del Anexo 3.</p>
+<p><strong>4.4. Cambio de empleador y retiro.</strong> Si durante la vigencia el participante deja de desempeñarse como vendedor de mostrador de un Cliente Vinculado, deja de acumular Puntos a partir de esa fecha, pero conserva y puede solicitar el pago de los Puntos ya causados y validados hasta ese momento, dentro de los plazos del numeral 7. Si pasa a un Cliente Vinculado distinto puede continuar en el Programa informándolo por la línea de WhatsApp.</p>
+<h2 id="seccion-5"><span class="num">5.</span> Vigencia</h2>
+<p>La vigencia de acumulación de cada canal es la que se indica en su anexo, con las fechas y horas exactas de inicio y de cierre allí señaladas. Solo se reconocen las Ventas Válidas realizadas y registradas dentro de ese período. Vencida la vigencia de acumulación, el participante conserva el derecho a solicitar el pago de los Puntos ya causados en los términos del numeral 7.3.</p>
+<h2 id="seccion-6"><span class="num">6.</span> Mecánica del incentivo</h2>
+<p><strong>6.1. Cómo se acumula.</strong> El participante recibe mil Puntos, equivalentes a mil pesos colombianos, por cada Producto Participante vendido durante la vigencia de acumulación de su canal, a partir del segundo pedido generado por el Cliente Vinculado desde el inicio de la actividad. Las ventas correspondientes al primer pedido no causan Puntos. Los Puntos son personales, no son transferibles, no son acumulables con los de otras actividades de CHOHO y no son canjeables por producto: se pagan en dinero en los términos del numeral 7.</p>
+<p><strong>6.2. Registro y validación de ventas.</strong> Las ventas deben registrarse por el mecanismo establecido por CHOHO para cada Cliente Vinculado: los clientes con sistema POS entregan el reporte de ventas del incentivo, sell out, y los clientes sin sistema POS entregan el informe de facturación del incentivo, sell in. Toda venta registrada queda sujeta a la validación de CHOHO, que se surte en cada Corte y cuyo resultado se comunica al participante por la línea de WhatsApp del Programa. Una misma venta solo puede registrarse una vez.</p>
+<p><strong>6.3. Ventas no válidas y anulación de Puntos.</strong> No se aceptan registros duplicados, información falsa, soportes alterados ni ventas que no puedan verificarse. Si con posterioridad a la validación la venta se anula, se devuelve la mercancía o se deja sin efecto la factura, los Puntos causados por esa venta se descuentan del saldo del participante en el Corte siguiente, y si el saldo no alcanza se descuentan de los Puntos que cause después. CHOHO informa al participante el descuento y su causa.</p>
+<p><strong>6.4. Acumulación de Puntos sin Tope.</strong> Durante la vigencia el programa, no existe un límite máximo de puntos que cada participante pueda acumular. Los puntos se causarán de acuerdo con el número de ventas de productos participantes que hayan sido debidamente registradas y validadas por CHOHO, conforme a las condiciones establecidas en estos Términos y Condiciones.</p>
+<h2 id="seccion-7"><span class="num">7.</span> Pago del incentivo</h2>
+<p><strong>7.1. Forma de pago.</strong> El incentivo se liquida según el número de Productos Participantes vendidos y validados en cada Corte, y se paga en dinero a través de Nequi o de Llave, a nombre del participante y al número de celular que registró en el formulario de inscripción. El pago a un tercero no procede en ningún caso.</p>
+<p><strong>7.2. Solicitud y fechas de pago.</strong> El participante deberá solicitar el pago a través de la línea de WhatsApp asignada al Programa. Las solicitudes recibidas hasta el día catorce (14) de cada mes serán programadas para pago el día diecinueve (19) del mismo mes. No obstante, teniendo en cuenta que, de acuerdo con las políticas internas de la empresa, los pagos se realizan los días jueves, cuando el día diecinueve (19) no coincida con un jueves, el pago se efectuará el primer jueves siguiente a dicha fecha.</p>
+<p>Las solicitudes recibidas después del día catorce (14) serán programadas para el ciclo de pago del mes siguiente, aplicando la misma regla: el pago se realizará el día diecinueve (19) si este corresponde a un jueves o, en caso contrario, el primer jueves posterior al día diecinueve (19).</p>
+<p><strong>7.3. Saldos no solicitados.</strong> Si al cierre de la vigencia de acumulación del canal el participante no ha solicitado el pago, CHOHO le paga la totalidad del saldo causado y validado dentro de los plazos que se indican en el anexo de cada canal, sin necesidad de solicitud previa, al mismo medio de pago registrado. La falta de solicitud no extingue el derecho al incentivo ya causado.</p>
+<p><strong>7.4. Impuestos.</strong> Sobre los valores indicados en estos términos y condiciones CHOHO practica la retención en la fuente que corresponda conforme a la ley, de manera que el participante recibe el valor neto resultante. CHOHO le entrega el soporte del pago y de la retención practicada, y el participante es responsable de declarar este ingreso cuando la ley lo obligue a hacerlo.</p>
+<h2 id="seccion-8"><span class="num">8.</span> Causales de exclusión</h2>
+<p>CHOHO puede excluir del Programa al participante que: i) registre ventas duplicadas, inexistentes o soportadas en documentos alterados; ii) suministre información falsa en el formulario de inscripción o en la solicitud de pago; iii) se ponga de acuerdo con terceros para registrar ventas que no realizó; o, iv) utilice el Programa de manera contraria a estos términos y condiciones. Antes de excluir a un participante CHOHO le comunica la causal por la línea de WhatsApp y le da tres días hábiles para presentar sus explicaciones y soportes. La exclusión hace perder los Puntos asociados a los registros irregulares; los Puntos causados por Ventas Válidas anteriores se pagan conforme al numeral 7.</p>
+<h2 id="seccion-9"><span class="num">9.</span> Naturaleza de la relación con el participante</h2>
+<p>El Programa es una acción promocional de la marca CHOHO y no genera entre CHOHO y el participante relación laboral, de agencia comercial, de mandato, de representación ni de intermediación, ni puede interpretarse como fuente de ninguna de ellas. El participante mantiene su relación laboral o contractual exclusivamente con el Cliente Vinculado que lo emplea, quien continúa siendo su único empleador y el único responsable de su remuneración y de sus prestaciones. CHOHO no imparte instrucciones al participante, no fija sus horarios, no le exige reportes de jornada y no lo evalúa por fuera de la mecánica descrita en estos términos y condiciones.</p>
+<p>El incentivo es un reconocimiento eventual de la marca, no constituye salario ni factor salarial, no sustituye ni complementa la remuneración pactada por el participante con su empleador y no genera expectativa de continuidad: el Programa tiene la vigencia definida en el anexo de cada canal y CHOHO no se obliga a repetirlo en períodos siguientes. Al inscribirse, el participante declara que su empleador conoce el Programa y no se opone a su participación, y que su reglamento interno o su contrato de trabajo no se lo impiden.</p>
+<h2 id="seccion-10"><span class="num">10.</span> Tratamiento de datos personales</h2>
+<p>CHOHO COLOMBIA S.A.S. actúa como responsable del tratamiento de los datos personales de los participantes. La inscripción en el Programa no implica por sí sola la autorización para el tratamiento de datos personales: esa autorización es previa, expresa e informada, se otorga de manera separada dentro del formulario de inscripción, marcando cada una de las finalidades, y queda registrada con la fecha y la hora en que se otorgó, de modo que pueda ser consultada después. Ninguna casilla viene marcada de antemano y el silencio del participante no se entiende como autorización.</p>
+<p>Los datos se tratan para administrar el Programa y verificar las ventas registradas, liquidar y pagar el incentivo, atender las solicitudes y reclamos del participante, cumplir las obligaciones legales, contables y tributarias asociadas al pago, y conservar la prueba de la inscripción y de la autorización. El envío de comunicaciones comerciales y publicitarias de la marca y el perfilamiento con fines comerciales son finalidades adicionales, que el participante puede aceptar o rechazar sin que ello afecte su participación en el Programa ni el pago de su incentivo.</p>
+<p>El participante puede conocer, actualizar y rectificar sus datos, solicitar prueba de la autorización, ser informado sobre el uso que se les ha dado, presentar quejas ante la Superintendencia de Industria y Comercio y revocar la autorización o solicitar la supresión de sus datos cuando proceda. Esos derechos se ejercen en Chatbot o Comunidad, y el detalle del tratamiento está en la política de tratamiento de datos personales de CHOHO publicada en Chatbot y Comunidad. La revocación de las finalidades adicionales no afecta el pago de los Puntos ya causados.</p>
+<h2 id="seccion-11"><span class="num">11.</span> Modificación, suspensión y terminación del programa</h2>
+<p>CHOHO puede modificar, suspender o dar por terminado el Programa antes del vencimiento de la vigencia cuando medie una causa objetiva que lo justifique, tal como el agotamiento del presupuesto asignado, la desvinculación de un Cliente Vinculado o una circunstancia de fuerza mayor. En ese caso lo comunica por los mismos medios y con la misma intensidad con que difundió el Programa, y la decisión rige hacia el futuro.</p>
+<p>La modificación, la suspensión o la terminación no afectan en ningún caso los Puntos ya causados y validados a favor de los participantes, que se liquidan y se pagan conforme al numeral 7 como si la vigencia hubiera transcurrido en su totalidad. La revisión mensual de continuidad prevista para el canal Cuentas Claves se ejerce dentro de estos límites. Cada versión de estos términos y condiciones se publica con su número y su fecha, y CHOHO conserva el histórico de versiones y el registro de la versión que aceptó cada participante.</p>
+<h2 id="seccion-12"><span class="num">12.</span> Preguntas, quejas y reclamos</h2>
+<p>Las preguntas, quejas y reclamos relacionados con el Programa, incluidas las inconformidades con la validación de una venta o con la liquidación de un pago, se presentan por la línea de WhatsApp +57 314 294 8318 o al correo contacto@chohocolombia.com, y CHOHO las responde dentro de los quince días hábiles siguientes a su recibo. El participante debe indicar su nombre, su documento de identidad, el Cliente Vinculado en el que trabaja y el detalle de la venta o del pago sobre el que reclama.</p>
+<h2 id="seccion-13"><span class="num">13.</span> Disposiciones finales</h2>
+<p>Estos términos y condiciones, sus anexos y el formulario de inscripción contienen la totalidad de las condiciones del Programa y prevalecen sobre cualquier información verbal o publicitaria que no coincida con ellos, sin perjuicio de que las condiciones objetivas anunciadas en la publicidad obligan a CHOHO en los términos de esa publicidad. Si alguna disposición resulta ineficaz, las demás conservan su fuerza. El Programa se rige por la ley colombiana y las controversias se someten a los jueces de la República de Colombia.</p>
+<h2 id="anexo-1"><span class="num">Anexo 1</span> Canal Cuentas Claves</h2>
+<p>Este anexo aplica a los vendedores de mostrador de los Clientes Vinculados del canal Cuentas Claves, que agrupa distribuidores y mayoristas. Su vigencia de acumulación va desde las 00:00 horas del 2 de septiembre de 2026 hasta las 23:59 horas del 15 de diciembre de 2026, con Cortes mensuales el 20 de cada mes. Los Productos Participantes son Kit de Arrastre marca CHOHO. Si al 15 de diciembre de 2026 el participante no ha solicitado el pago, CHOHO le paga la totalidad del saldo causado y validado a más tardar el 24 de diciembre de 2026.</p>
+<h2 id="anexo-2"><span class="num">Anexo 2</span> Canal Tiendas Especializadas</h2>
+<p>Este anexo aplica a los vendedores de mostrador de los Clientes Vinculados del canal Tiendas Especializadas. Su vigencia de acumulación va desde las 00:00 horas del 1 de agosto de 2026 hasta las 23:59 horas del 15 de octubre de 2026, con Cortes mensuales el 20 de cada mes. Los Productos Participantes son Kit de Arrastre marca CHOHO. Si al 15 de octubre de 2026 el participante no ha solicitado el pago, CHOHO le paga la totalidad del saldo causado y validado a más tardar el 24 de octubre de 2026.</p>
+<p>Las ventas realizadas entre el 1 de agosto de 2026 y la fecha de publicación de estos términos y condiciones se reconocen a favor del participante que se inscriba a más tardar el 2 de septiembre de 2026, siempre que puedan validarse conforme al numeral 6.2.</p>
+<h2 id="anexo-3"><span class="num">Anexo 3</span> Comunicación de bienvenida y constancia de inscripción</h2>
+<div class="mensaje-bienvenida">
+<p>Bienvenido a CHOHO EXPERT.</p>
+<p>Tu recomendación ahora vale más. En CHOHO EXPERT queremos premiarte por confiar en nuestra marca y recomendar nuestros productos a tus clientes. Tú eres quien conoce al cliente, lo asesora y lo ayuda a elegir, y por eso queremos reconocer tu esfuerzo.</p>
+<p>Quedaste inscrito el Plan CHOHO EXPERT en el canal Chatbot y Comunidad. Desde ahora, por cada Kit de Arrastre CHOHO que vendas, ganas 1.000 puntos, que equivalen a $1.000. Los puntos se cuentan a partir del segundo pedido que genere el almacén donde trabajas y se acumulan hasta el diciembre 24 2026. Puedes pedir tu pago por esta misma línea de WhatsApp: si lo pides antes del 14 de cada mes, te lo pagamos el 19 de ese mes; si lo pides después, el 19 del mes siguiente. Si no lo pides, te pagamos todo tu saldo al cierre. El pago te llega por Nequi o Llave al celular que registraste.</p>
+<p>Los términos y condiciones completos del programa, con la mecánica, las fechas y las reglas de validación, están en Chatbot y Comunidad. Ahí también puedes consultar en qué casos una venta no se valida.</p>
+<p>Sobre tus datos personales. Al inscribirte autorizaste a CHOHO COLOMBIA S.A.S. a tratar tus datos para administrar el programa, validar tus ventas, pagarte tu incentivo, atender tus solicitudes y conservar la prueba de tu inscripción. Además, marcaste tu decisión sobre el envío de comunicaciones comerciales y publicitarias de la marca y sobre el perfilamiento con fines comerciales, que son opcionales y no afectan tu incentivo. Puedes conocer, actualizar y rectificar tus datos, pedir prueba de tu autorización, revocarla o pedir que los suprimamos, escribiendo a contacto@chohocolombia.com. La política de tratamiento de datos personales está en Chatbot y Comunidad.</p>
+<p>Recomienda. Vende. Acumula. Gana. Tu conocimiento te hace experto. Tus ventas te hacen ganar.</p>
+</div>
+      </div>
+
+      <a class="volver" href="#inicio">Volver arriba</a>
+
+
+      <!-- ================= CONTACTO ================= -->
+
+      <div class="contacto-bloque">
+
+        <div class="section-title">
+          ¿TIENES <span>PREGUNTAS?</span>
+        </div>
+
+        <div class="contacto">
+          <div>
+            <strong>Escríbenos y te ayudamos.</strong>
+            <p>Por estos mismos canales puedes conocer, actualizar o eliminar tus datos, o revocar tu autorización.</p>
+          </div>
+          <div class="acciones">
+            <a class="btn" href="https://wa.me/573142948318" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="link-btn" href="mailto:contacto@chohocolombia.com">Correo</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="pie">Mejor que el original</div>
+
+  </div>
+
+  <p class="empresa">
+    CHOHO COLOMBIA S.A.S. &nbsp;|&nbsp; NIT 830.143.066-0<br>
+    Autopista Norte No. 122 - 35, Edificio Mezco, Piso 7, Bogotá<br>
+    contacto@chohocolombia.com &nbsp;|&nbsp; WhatsApp +57 314 294 8318
+  </p>
+
+</body>
+</html>
